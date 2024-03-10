@@ -1,0 +1,18 @@
+parameters:
+    classAliases: {}
+
+services:
+	reflectionProviderFactory:
+		class: PHPStan\Reflection\ReflectionProvider\ReflectionProviderFactory
+		arguments:
+			staticReflectionProvider: @overriddenBetterReflectionProvider
+		alteration: true
+
+	overriddenBetterReflectionProvider:
+		class: PhpstanClassAlias\ClassAliasingReflectionProvider
+		arguments:
+			reflectionProvider: @betterReflectionProvider
+			classAliases: %classAliases%
+
+parametersSchema:
+    classAliases: arrayOf(string, string)

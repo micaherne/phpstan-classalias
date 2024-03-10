@@ -1,0 +1,4 @@
+parameters:
+    classAliases: {
+    	"MyAlias": "Exception"
+    }

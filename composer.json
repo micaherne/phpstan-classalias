@@ -1,0 +1,29 @@
+{
+  "name": "micaherne/phpstan-classalias",
+  "description": "Static class aliasing for PHPStan",
+  "type": "phpstan-plugin",
+  "require-dev": {
+    "phpstan/phpstan": "^1.10",
+    "phpunit/phpunit": "^11.0"
+  },
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "PhpstanClassAlias\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Michael Aherne",
+      "email": "micaherne@blueyonder.co.uk"
+    }
+  ],
+  "require": {},
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "extension.neon"
+      ]
+    }
+  }
+}
