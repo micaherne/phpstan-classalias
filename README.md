@@ -2,6 +2,8 @@
 
 This is an EXPERIMENTAL extension for PHPStan that adds support for static class aliases (i.e. those known before runtime).
 
+It is intended to remove the need for using actual class_alias() calls in a bootstrap file, which requires the aliased class to be available (or at least autoloadable) at the time the alias is defined, otherwise PHP will emit a warning. 
+
 ## Installation
 
 Add the extension to your `composer.json`. For example:
@@ -9,7 +11,7 @@ Add the extension to your `composer.json`. For example:
 ```json
 {
     "require-dev": {
-        "phpstan/phpstan": "^0.12.3",
+        "phpstan/phpstan": "^1.10",
         "phpstan/phpstan-classalias": "^0.1"
     }
 }
