@@ -21,7 +21,7 @@ Either install with [PHPStan Extension Installer](https://github.com/phpstan/ext
 
 ```neon
 includes:
-    - vendor/phpstan/phpstan-classalias/extension.neon
+    - vendor/micaherne/phpstan-classalias/extension.neon
 ```
 
 Configuration
