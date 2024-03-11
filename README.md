@@ -12,7 +12,7 @@ Add the extension to your `composer.json`. For example:
 {
     "require-dev": {
         "phpstan/phpstan": "^1.10",
-        "phpstan/phpstan-classalias": "^0.1"
+        "micaherne/phpstan-classalias": "^0.1"
     }
 }
 ```
